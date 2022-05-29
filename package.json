@@ -13,5 +13,17 @@
   "dependencies": {
     "gh-pages": "^4.0.0",
     "three": "^0.141.0"
-  }
+  },
+  "description": "Personal website",
+  "main": "main.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/seamusgould/seamusgould.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/seamusgould/seamusgould.github.io/issues"
+  },
+  "homepage": "https://github.com/seamusgould/seamusgould.github.io#readme"
 }
