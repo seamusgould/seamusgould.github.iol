@@ -1,171 +1,285 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Seamus' Portfolio</title>
-  </head>
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>seamusgould</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/magic-grid/dist/magic-grid.min.js"></script>
+    <link rel="stylesheet" href="index.css">
+  <link rel="icon" href="https://avatars.githubusercontent.com/u/56201871?v=4" type="image/png"></head>
+
   <body>
-
-    <canvas id="bg"></canvas>   
-
-    <main>
-
-      <header>
-        <h1>Seamus Gould</h1>
-        <img src="intro.gif" alt="funny animation GIF">
-      </header>
-
-
-      <blockquote>
-        <p>“The Answer to the Great Question... Of Life, the Universe and Everything... Is... Forty-two,' said Deep Thought, with infinite majesty and calm.” </p>
-        <footer>
-          <cite>
-            <a href="https://www.goodreads.com/work/quotes/3078186-the-hitchhiker-s-guide-to-the-galaxy">
-              <span>Douglas Adams</span>
+    <div id="loading">
+      <div id="spinner"></div>
+    </div>
+    <div id="profile">
+      <div id="profile_img" style="background: url(https://avatars.githubusercontent.com/u/56201871?v=4) center;"></div>
+      <div id="username"><span style="display:block;">Seamus Gould</span><a href="https://github.com/seamusgould">@seamusgould</a></div>
+      <div id="userbio" style="display: none;">undefined</div>
+      <div id="about">
+                <span style="display:none;"><i class="fas fa-users"></i> &nbsp; null</span>
+                <span style="display:none;"><i class="fas fa-envelope"></i> &nbsp; null</span>
+                <span style="display:none;"><i class="fas fa-link"></i> &nbsp; <a href=""></a></span>
+                <span style="display:none;"><i class="fas fa-map-marker-alt"></i> &nbsp;&nbsp; null</span>
+                <span style="display:none;"><i class="fas fa-user-tie"></i> &nbsp;&nbsp; Available for hire</span>
+                <div class="socials">
+                <span style="display:none !important;"><a href="https://www.twitter.com/undefined" target="_blank" class="socials"><i class="fab fa-twitter"></i></a></span>
+                <span style="display:none !important;"><a href="https://www.dribbble.com/undefined" target="_blank" class="socials"><i class="fab fa-dribbble"></i></a></span>
+                <span style="display:block;"><a href="https://www.linkedin.com/in/https://www.linkedin.com/in/seamus-gould-5a5673174//" target="_blank" class="socials"><i class="fab fa-linkedin-in"></i></a></span>
+                <span style="display:none !important;"><a href="https://www.medium.com/@undefined/" target="_blank" class="socials"><i class="fab fa-medium-m"></i></a></span>
+                </div>
+                </div>
+    </div>
+    <div id="display">
+      <div id="work">
+        <h1>Work.</h1>
+        <div class="projects" id="work_section">
+                        <a href="https://github.com/seamusgould/seamusgould.github.io" target="_blank">
+                        <section>
+                            <div class="section_title">seamusgould.github.io</div>
+                            <div class="about_section">
+                            <span style="display:block;">Personal website</span>
+                            </div>
+                            <div class="bottom_section">
+                                <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; HTML</span>
+                                <span><i class="fas fa-star"></i>&nbsp; 0</span>
+                                <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
+                            </div>
+                        </section>
+                        </a>
+                        <a href="https://github.com/seamusgould/ResumeBuilder" target="_blank">
+                        <section>
+                            <div class="section_title">ResumeBuilder</div>
+                            <div class="about_section">
+                            <span style="display:block;">A web application made in C# and .Net to help make applying to jobs just a bit easier.</span>
+                            </div>
+                            <div class="bottom_section">
+                                <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; C#</span>
+                                <span><i class="fas fa-star"></i>&nbsp; 0</span>
+                                <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
+                            </div>
+                        </section>
+                        </a>
+                        <a href="https://github.com/seamusgould/FastViz" target="_blank">
+                        <section>
+                            <div class="section_title">FastViz</div>
+                            <div class="about_section">
+                            <span style="display:block;">A website made in react javascript to visualize the sentiment around news articles.</span>
+                            </div>
+                            <div class="bottom_section">
+                                <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; JavaScript</span>
+                                <span><i class="fas fa-star"></i>&nbsp; 0</span>
+                                <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
+                            </div>
+                        </section>
+                        </a>
+                        <a href="https://github.com/seamusgould/seamusgould" target="_blank">
+                        <section>
+                            <div class="section_title">seamusgould</div>
+                            <div class="about_section">
+                            <span style="display:block;">Config files for my GitHub profile.</span>
+                            </div>
+                            <div class="bottom_section">
+                                <span style="display:none;"><i class="fas fa-code"></i>&nbsp; null</span>
+                                <span><i class="fas fa-star"></i>&nbsp; 0</span>
+                                <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
+                            </div>
+                        </section>
+                        </a>
+                        <a href="https://github.com/seamusgould/HotDogClassifier" target="_blank">
+                        <section>
+                            <div class="section_title">HotDogClassifier</div>
+                            <div class="about_section">
+                            <span style="display:none;">undefined</span>
+                            </div>
+                            <div class="bottom_section">
+                                <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; Jupyter Notebook</span>
+                                <span><i class="fas fa-star"></i>&nbsp; 0</span>
+                                <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
+                            </div>
+                        </section>
+                        </a>
+                        <a href="https://github.com/seamusgould/FLIGHT" target="_blank">
+                        <section>
+                            <div class="section_title">FLIGHT</div>
+                            <div class="about_section">
+                            <span style="display:block;">A lightweight implementation of Dr. Fill</span>
+                            </div>
+                            <div class="bottom_section">
+                                <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; HTML</span>
+                                <span><i class="fas fa-star"></i>&nbsp; 0</span>
+                                <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
+                            </div>
+                        </section>
+                        </a>
+                        <a href="https://github.com/seamusgould/KruskalsMaze" target="_blank">
+                        <section>
+                            <div class="section_title">KruskalsMaze</div>
+                            <div class="about_section">
+                            <span style="display:block;">A maze modeled after Kruskal's Algorithm.</span>
+                            </div>
+                            <div class="bottom_section">
+                                <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; Java</span>
+                                <span><i class="fas fa-star"></i>&nbsp; 0</span>
+                                <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
+                            </div>
+                        </section>
+                        </a>
+                        <a href="https://github.com/seamusgould/Finsta" target="_blank">
+                        <section>
+                            <div class="section_title">Finsta</div>
+                            <div class="about_section">
+                            <span style="display:block;">A clone of instagram that includes some additional features,</span>
+                            </div>
+                            <div class="bottom_section">
+                                <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; CSS</span>
+                                <span><i class="fas fa-star"></i>&nbsp; 0</span>
+                                <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
+                            </div>
+                        </section>
+                        </a>
+                        <a href="https://github.com/seamusgould/CMPU366_Presentation" target="_blank">
+                        <section>
+                            <div class="section_title">CMPU366_Presentation</div>
+                            <div class="about_section">
+                            <span style="display:none;">undefined</span>
+                            </div>
+                            <div class="bottom_section">
+                                <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; TeX</span>
+                                <span><i class="fas fa-star"></i>&nbsp; 0</span>
+                                <span><i class="fas fa-code-branch"></i>&nbsp; 1</span>
+                            </div>
+                        </section>
+                        </a>
+                        <a href="https://github.com/rowanroshong/asmt5" target="_blank">
+                        <section>
+                            <div class="section_title">asmt5</div>
+                            <div class="about_section">
+                            <span style="display:block;">Assignment 5 from CMPU366, Spring 2022</span>
+                            </div>
+                            <div class="bottom_section">
+                                <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; Python</span>
+                                <span><i class="fas fa-star"></i>&nbsp; 0</span>
+                                <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
+                            </div>
+                        </section>
+                        </a>
+                        <a href="https://github.com/seamusgould/WhatsUpApp" target="_blank">
+                        <section>
+                            <div class="section_title">WhatsUpApp</div>
+                            <div class="about_section">
+                            <span style="display:block;">An app that allows users to post, view, and comment on events at Vassar College.</span>
+                            </div>
+                            <div class="bottom_section">
+                                <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; Java</span>
+                                <span><i class="fas fa-star"></i>&nbsp; 0</span>
+                                <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
+                            </div>
+                        </section>
+                        </a>
+                        <a href="https://github.com/seamusgould/HorseRacing-1" target="_blank">
+                        <section>
+                            <div class="section_title">HorseRacing-1</div>
+                            <div class="about_section">
+                            <span style="display:block;">Beating the horse racing markets</span>
+                            </div>
+                            <div class="bottom_section">
+                                <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; Jupyter Notebook</span>
+                                <span><i class="fas fa-star"></i>&nbsp; 1</span>
+                                <span><i class="fas fa-code-branch"></i>&nbsp; 1</span>
+                            </div>
+                        </section>
+                        </a>
+                        <a href="https://github.com/seamusgould/github-slideshow" target="_blank">
+                        <section>
+                            <div class="section_title">github-slideshow</div>
+                            <div class="about_section">
+                            <span style="display:block;">A robot powered training repository <img src="https://github.githubassets.com/images/icons/emoji/unicode/1f916.png?v8" class="emoji"></span>
+                            </div>
+                            <div class="bottom_section">
+                                <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; Ruby</span>
+                                <span><i class="fas fa-star"></i>&nbsp; 0</span>
+                                <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
+                            </div>
+                        </section>
+                        </a></div>
+      </div>
+      <div id="forks" style="display:none;">
+        <h1>Forks.</h1>
+        <div class="projects" id="forks_section"></div>
+      </div>
+      <div id="blog_section">
+        <h1>Blog.</h1>
+        <div id="blogs"></div>
+      </div>
+      <div id="footer">
+        <a href="https://github.com/imfunniee" target="_blank">made on earth by a human</a>
+      </div>
+    </div>
+    <script type="text/javascript">
+      setTimeout(function() {
+        document.getElementById("loading").classList.add("animated");
+        document.getElementById("loading").classList.add("fadeOut");
+        setTimeout(function() {
+          document.getElementById("loading").classList.remove("animated");
+          document.getElementById("loading").classList.remove("fadeOut");
+          document.getElementById("loading").style.display = "none";
+        }, 800);
+      }, 1500);
+      $.getJSON("blog.json", function(blog) {
+        blog = blog || [];
+        if (blog.length == 0) {
+          return (document.getElementById("blog_section").style.display =
+            "none");
+        }
+        for (var i = 0; i < blog.length; i++) {
+          $("#blogs").append(`
+            <a href="./blog/${blog[i].url_title}/" target="_blank">
+                <section>
+                    <img src="./blog/${blog[i].url_title}/${blog[i].top_image}">
+                    <div class="blog_container">
+                        <div class="section_title">${blog[i].title}</div>
+                        <div class="about_section">
+                            ${blog[i].sub_title}
+                        </div>
+                    </div>
+                </section>
             </a>
-          </cite>
-        </footer>
-      </blockquote>
+            `);
+        }
+      }).fail(function() {
+        return (document.getElementById("blog_section").style.display = "none");
+      });
+    </script>
 
-      <section class="dark">
-        <h1>🤖 Projects</h1>
-      </section>
+    <script>
+      const magicProjectsGrid = new MagicGrid({
+        container: "#work_section",
+        animate: false,
+        gutter: 30, // default gutter size
+        static: true,
+        useMin: false,
+        maxColumns: 2,
+        useTransform: true
+      });
 
-      <section class="light">
-        <h2> 🛫 FLIGHT </h2>
+      const magicForksGrid = new MagicGrid({
+        container: "#forks_section",
+        animate: false,
+        gutter: 30, // default gutter size
+        static: true,
+        useMin: false,
+        maxColumns: 2,
+        useTransform: true
+      });
 
-        <p>
-          A <b>light</b> weight implementation of Dr. <b>F</b>ill, a crossword solving algorithm.
-          See a demonstration here:
-          <br>
-          <br>
-          <br>
-          <img src="Fill.gif" alt="funny animation GIF">
-          <br>
-          <br>
-          <br>
-          To learn more about the algorithm, checkout the <a href="https://github.com/seamusgould/FLIGHT">repo</a>          
-        </p>
-
-      </section>
-
-      <section class="light">
-        <h2> 📸 Finstagram </h2>
-
-        <p>
-          An Instagram clone built using Python, MySQL, Jinja2, HTML, CSS, and Bootstrap.
-          <br>
-          <br>
-          <br>
-          <img src="Finsta.gif" alt="Gif for Finsta">
-          <br>
-          <br>
-          <br>
-          <a href="https://github.com/seamusgould/Finsta"> Repo </a>          
-        </p>
-
-      </section>
-
-      <section class="light">
-        <h2> 🎉 WhatsUpApp </h2>
-
-        <p>
-          A mobile android application made using Java, XML, Google Maps API, Firebase, and planned with UML.
-          Unfortunately, I was unable to make a video of the application, but it does work.
-          <a href="https://github.com/seamusgould/WhatsUpApp"> Repo </a>          
-        </p>
-      </section>
-
-      <section class="light">
-        <h2> News Sentiment Visualization </h2>
-
-        <p>
-          A web application I made using react, d3, and the newsapi.org API.  I always thought that it would be interesting to track the sentiment of news articles, but I found myself a bit limited by the API requests.
-          Luckily, I was able to retrieve one hundred articles from the newsapi.org API and visualize the sentiment of each article, though I wish I could have gotten more articles.
-          <br>
-          <br>
-          <br>
-          <img src="viz.gif" alt="News gif">
-          <br>
-          <br>
-          <br>
-          <a href="https://github.com/seamusgould/FastViz">Repo</a>          
-        </p>
-
-      </section>
-
-
-
-      <section class="light">
-        <h2> 🌭 Seefood </h2>
-
-        <p>
-          A simple mobile android application made using Kotlin and TFlite.
-          It is based on the SeeFood app from Silicon Valley, and uses the TFLite model to detect hotdogs,
-          though hopefully, this model can be trained to detect other food as well.
-          <br>
-          <br>
-          <br>
-          <img src="hotdog.gif" alt="Gif for SeeFood">
-          <br>
-          <br>
-          <br>
-          I thought that this would be a fun project to work on, but I do not think that these people would agree.
-          <br>
-          <br>
-          <br>
-          <img src="silicone.gif" alt="Gif for SeeFood">
-          <br>
-          <br>
-          <br>
-          <a href="https://github.com/seamusgould/HotDogClassifier"> Repo </a>         
-        </p>
-      </section>
-      
-      <section class="light">
-        <h2> News Sentiment Visualization </h2>
-
-        <p>
-          A web application I made using react, d3, and the newsapi.org API.  I always thought that it would be interesting to track the sentiment of news articles, but I found myself a bit limited by the API requests.
-          Luckily, I was able to retrieve one hundred articles from the newsapi.org API and visualize the sentiment of each article, though I wish I could have gotten more articles.
-          <br>
-          <br>
-          <br>
-          <img src="viz.gif" alt="News gif">
-          <br>
-          <br>
-          <br>
-          <a href="https://github.com/seamusgould/FastViz">Repo</a>          
-        </p>
-
-      </section>
-
-      <section class="light">
-        <h2> Kruskal's Maze Generation Algorithm </h2>
-
-        <p>
-          A simple implementation of Kruskal's algorithm for maze generation.
-          <br>
-          <br>
-          <br>
-          <img src="puz.gif" alt="Maze gif" width="400" height="500" />
-          <br>
-          <br>
-          <br>
-          <a href="https://github.com/seamusgould/KruskalsMaze"> Repo </a>          
-        </p>
-      </section>
-      
-      <section class="light">
-        <h2> 🙋 About the author </h2>
-        <h3>Github:<a href="https://github.com/seamusgould/"> here </a></h3>
-        <h3>LinkedIn:<a href="https://www.linkedin.com/in/seamus-gould-5a5673174/"> here </a></h3>
-        <h3>StackOverflow:<a href="https://stackoverflow.com/users/17919683/seamus-gould"> here </a></h3>
-      </section>  
+      $("document").ready(() => {
+        magicProjectsGrid.listen();
+        magicForksGrid.listen();
+      });
+    </script>
   
-    </main>   
-    <script type="module" src="/main.js"></script>
-  </body>
-</html>
+
+</body></html>
